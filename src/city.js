@@ -106,7 +106,7 @@ const sketch = (p) => {
     let hasKitte = false;
     for (let x = 10; x < 880; ) {
       if (x > 360 && x < 520) { x = 520; continue; } 
-      let isKitte = !hasKitte && x > 60 && x < 150; 
+      let isKitte = false; // !hasKitte && x > 60 && x < 150; の部分を無効化
       let isSkyscraper = true; 
       
       let w = isKitte ? 46 : p.floor(p.random(35, 55));
